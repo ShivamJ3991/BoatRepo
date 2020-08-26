@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boat", "Boat\Boat.csproj", "{ED14B43A-CD8E-4350-BAC9-9BBAC75D3231}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED14B43A-CD8E-4350-BAC9-9BBAC75D3231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED14B43A-CD8E-4350-BAC9-9BBAC75D3231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED14B43A-CD8E-4350-BAC9-9BBAC75D3231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED14B43A-CD8E-4350-BAC9-9BBAC75D3231}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {565C88A9-8302-4976-A50A-C34E48F3DCC8}
+	EndGlobalSection
+EndGlobal

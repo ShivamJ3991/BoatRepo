@@ -1,0 +1,49 @@
+﻿@page
+@model Boat.EditModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+
+<form method="post">
+
+    <input type="hidden" asp-for="Boat.Id" />
+    <div class="form-group">
+        <label asp-for="Boat.BoatName"></label>
+        <input asp-for="Boat.BoatName" class="form-control" />
+        <span class="text-danger" asp-validation-for="Boat.BoatName"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Boat.BoatHolderName"></label>
+        <input asp-for="Boat.BoatHolderName" class="form-control" />
+        <span class="text-danger" asp-validation-for="Boat.BoatHolderName"></span>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="Boat.RentRate"></label>
+        <input asp-for="Boat.RentRate" class="form-control " />
+        <span class="text-danger" asp-validation-for="Boat.RentRate"></span>
+    </div>
+    <div>
+        <label>Upload Image</label>
+        <div class="custom-file">
+            <input asp-for="FormFile" class="form-control custom-file-input" />
+            <lable class="custom-file-label">Choose File.....</lable>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+
+    @section Scripts{ 
+        <script>
+            $(document).ready(function () {
+                $('.custom-file-input').on("change", function () {
+                    var fileName = $(this).val().split('\\').pop();
+                    $(this).next('.custom-file-label').html(fileName);
+                });
+            });
+        </script>
+
+    }
+</form>
